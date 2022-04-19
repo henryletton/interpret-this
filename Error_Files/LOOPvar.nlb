@@ -1,0 +1,5 @@
+BEGIN {
+    LOOP $X 6 {
+        ONES 5 3 $X
+    }
+}

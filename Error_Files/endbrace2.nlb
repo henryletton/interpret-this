@@ -1,0 +1,5 @@
+BEGIN {
+   LOOP $I 10 {
+      SET $J := $I ;
+
+}

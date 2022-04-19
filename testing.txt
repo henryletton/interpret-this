@@ -1,0 +1,26 @@
+Testing strategy.
+
+
+There are 5 parts to my testing:
+
+1) Unit testing. Within testing.c, every function has some specific lines of testing.
+
+2) Integration testing. Many functions require other functions to have already been run.
+    Within testing.c, much of the testing looks at groups of functions (i.e. lexer then parser).
+
+3) Black-box testing. The printed output of nlab is also saved in a string.
+    In testing.c, the test_files function checks each of Neill's files (Data) and a selection of my own (My_Data) for the expected output against the saved string.
+
+4) Error testing. There are many ways that .nlb programs can be incorrectly written.
+    I've created a series of .nlb files in the "Error_Files" folder to highlight many of these.
+
+5) Compilation testing. Testing for correctness in the compilation.
+
+
+Running the testing:
+
+1-3) "make testing" and then "./testing". There will be printing but no errors.
+
+4) "make errors". This will print erroneous .nlb code and display unique errors to te code.
+
+5) "make testing" and then "./testing_s" for sanitize, or "valgrind ./testing_v"

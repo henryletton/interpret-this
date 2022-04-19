@@ -1,0 +1,3 @@
+BEGIN {
+    ONES 3 $L
+}

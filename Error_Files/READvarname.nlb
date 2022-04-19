@@ -1,0 +1,4 @@
+BEGIN {
+    READ "folder/file.nlb"
+    PRINT "END"
+}

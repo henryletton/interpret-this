@@ -1,0 +1,5 @@
+BEGIN {
+    LOOP 10 {
+        PRINT "LOOP"
+    }
+}

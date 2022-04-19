@@ -1,0 +1,5 @@
+BEGIN {
+    ONES 3 3 $F
+    ONES 2 2 $G
+    SET $H := $F $G B-TIMES ;
+}

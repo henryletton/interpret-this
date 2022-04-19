@@ -1,0 +1,8 @@
+BEGIN {
+    READ "My_Data/cross.arr" $A
+    ONES 5 5 $B
+    SET $C := $B 0 B-EQUALS ;
+    SET $D := $B 1 B-ADD ;
+    SET $E := $A $B B-AND $A B-OR $C B-GREATER $D B-ADD $D B-TIMES ;
+    PRINT $E
+}

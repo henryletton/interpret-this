@@ -1,0 +1,15 @@
+BEGIN {
+    ONES 1 1 $X
+    LOOP $A 10 {
+        LOOP $B 5 {
+            LOOP $C 20 {
+                SET $B := $C ;
+                SET $X := $X 1 B-ADD ;
+            }
+        }
+    }
+    PRINT $A
+    PRINT $B
+    PRINT $C
+    PRINT $X
+}

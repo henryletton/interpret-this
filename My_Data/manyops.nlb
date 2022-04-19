@@ -1,0 +1,9 @@
+BEGIN {
+    READ "My_Data/cross.arr" $A
+    READ "My_Data/square.arr" $B
+    SET $C := $B U-NOT 1 B-ADD ;
+    SET $D := $A U-EIGHTCOUNT U-EIGHTCOUNT U-EIGHTCOUNT U-EIGHTCOUNT U-EIGHTCOUNT ;
+    PRINT $C
+    PRINT $D
+}
+

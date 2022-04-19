@@ -1,0 +1,5 @@
+BEGIN {
+   SET $V := 1 ;
+   PRINT $V
+   $A 2 B-ADD ;
+}

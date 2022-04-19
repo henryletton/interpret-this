@@ -1,0 +1,4 @@
+BEGIN {
+    ONES 3 4
+    SET $K := 2 ;
+}
